@@ -1,0 +1,56 @@
+Chapter 2, number 4 – Total Purchase
+
+{Display "Please enter Item cost $"
+Input itemCost (item 1 = user input)
+}Repeat 5 times
+
+Calculate subtotal = (item 1 + item 2 + ...)
+Calculate tax = ( subtotal * .06)
+Calcutale total = (subtotal + tax)
+Display subtotal 
+Display tax
+Display total
+
+
+Chapter 2, number  9 –  Fahrenheit to Celsius 
+
+Display "Please enter temperature in Celsius"
+Input tempC = user input
+Calculate tempF=9/5tempC + 32
+Display "Temperature in Fahrenheit: " + tempF
+
+Exercises Chapter 2, number 10-  Stock Transaction 
+
+Display "Please enter stock purchase price per share"
+Input purchStockPrice = $32.87
+Display "Please enter the number of shares purchased)
+Input numberOfSharesPurchased= 1,000
+Display "Please enter the percent of broker commision on purchase"
+Input purchseBrokerCommission = .02
+
+
+Display "Please enter stock sell price per share"
+Input soldStockPrice = $33.92
+Display "Please enter the number of shares sold"
+Input numberOfSharesSold =1,000
+Display "Please enter the percent of broker commision on stock sold"
+Input soldBrokerCommission = .02
+
+Calculate amountPurchasedReceived = purchasedStockPrice * numberOfSharesPurchased
+Calculate amountOfPurchCommission = amountPurchasedReceived * purchseBrokerCommission
+
+Calculate amountSoldReceived = soldStockPrice * numberOfSharesSold 
+Calculate amountOfSoldCommission =	amountSoldReceived * soldBrokerCommission
+Calculate amountOfProfit = amountSoldReceived - amountPurchasedReceived - amountOfPurchCommission - amountOfSoldCommission
+
+Display "Amount of money Joe paid for the stock. " + amountPurchasedReceived
+Display "Amount of commission Joe paid broker on purchase. " + amountOfPurchCommission
+Display "Amount that Joe sold the stock. " + amountSoldReceived
+Display "Amount of commission Joe paid his broke when he sold the stock. " + amountOfSoldCommission
+Display "Amount of profit or loss after Joe sold the stock and paid his broker, both times. " + amountOfProfit
+
+
+
+ 
+
+

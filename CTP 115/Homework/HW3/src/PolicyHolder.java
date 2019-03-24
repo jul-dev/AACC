@@ -1,13 +1,18 @@
 public class PolicyHolder {
-    private int policyNumber ;
-    private int customerAge ;
-    private int numberOfAccidents ;
+    private int policyNumber;
+    private int customerAge;
+    private int numberOfAccidents;
 
     public PolicyHolder(int policyNumber, int customerAge, int numberOfAccidents) {
         this.policyNumber = policyNumber;
-        this.customerAge = customerAge;
-        this.numberOfAccidents = numberOfAccidents;
-    }
+        if (customerAge > 14 && customerAge <= 125) {
+            this.customerAge = customerAge;
+        } else System.out.println("error:age must be between 14 and 125");
+        this.customerAge = 0;
+        this.customerAge =customerAge;
+        this.numberOfAccidents =numberOfAccidents;
+}
+
 
     public PolicyHolder() {
         // initialize fields to none existing values
@@ -26,7 +31,10 @@ public class PolicyHolder {
     }
 
     public void setCustomerAge(int customerAge) {
-        this.customerAge = customerAge;
+        if (customerAge>14&&customerAge<=125){
+            this.customerAge=customerAge;
+        }else  this.customerAge = 0;
+
     }
 
     public int getNumberOfAccidents() {

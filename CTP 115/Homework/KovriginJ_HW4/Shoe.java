@@ -20,17 +20,11 @@ public class Shoe {
     }
 
     // Setter
-    public void setStyle(String style) {
-        this.style = style;
-    }
+    public void setStyle(String style) { this.style = style; }
 
-    public void setColor(String color) {
-        this.color = color;
-    }
+    public void setColor(String color) { this.color = color; }
 
-    public void setSize(double size) {
-        this.size = size;
-    }
+    public void setSize(double size) { this.size = size; }
 
     //Getter
     public String getStyle() {

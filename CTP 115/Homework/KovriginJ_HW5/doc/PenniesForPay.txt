@@ -1,0 +1,55 @@
+﻿Homework 5 Ch 5 number 9
+
+#9 Pennies for Pay
+
+Class PenniedForPay
+
+Module Main()
+	
+	Display "Please enter number of days to be calculated"
+	Set days=user input	
+	
+	Call calcAndDisplayPay (days)
+	
+End Module
+
+Module calcAndDisplayPay(int numDays)
+
+	Declare int i=1
+	Declare Real total=0
+	Declare int dailyPay=1
+	
+While i<=numDays
+	Display i + "Day" + dailyPay+ "cents"
+	Set total = total + dailyPay
+	Set dailyPay=dailyPay*2
+	i++
+End While
+	
+End Module 
+Display "_______________________________"
+Display "The total amount is $"+ total/100
+
+End Class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
